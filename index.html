@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+   <div class="task-input">
+    <input type="text" id="taskText" placeholder=" Write your task...">
+    <select id="taskCategory">
+        <option value="personal">Personal</option>
+        <option value="studies">Studies</option>
+        <option value="work">Work</option>
+    </select>
+    <button onclick="addTask()"><strong>Add</strong></button>
+ </div>
+   <div class="task-list">
+    <div class="category" id="personal">
+    <h3>Personal</h3>
+    <ul></ul>
+   </div>
+   <div class="category" id="studies">
+   <h3>Studies</h3>
+   <ul></ul>
+   </div>
+   <div class="category" id="work">
+    <h3>Work</h3>
+    <ul></ul>
+   </div>
+ </div>
+</div>
+
+     <script src="script.js"></script>
+
+</body>
+</html>
